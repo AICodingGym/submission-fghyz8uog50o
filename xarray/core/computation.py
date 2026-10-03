@@ -1727,7 +1727,7 @@ def dot(*arrays, dims=None, **kwargs):
     return result.transpose(*all_dims, missing_dims="ignore")
 
 
-def where(cond, x, y, keep_attrs=None):
+def where(cond, x, y, keep_attrs=True):
     """Return elements from `x` or `y` depending on `cond`.
 
     Performs xarray-like broadcasting across input arguments.
